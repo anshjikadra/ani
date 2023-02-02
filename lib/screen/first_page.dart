@@ -1,3 +1,4 @@
+import 'package:ani/screen/Wavytext_animation.dart';
 import 'package:ani/screen/animeted_switch.dart';
 import 'package:ani/screen/background_animation.dart';
 import 'package:ani/screen/bottom_navigationbar_animation.dart';
@@ -52,7 +53,7 @@ class _first_pageState extends State<first_page> {
     "Bouncing Animation",
     "Loading Animation",
     "Physics Animation",
-
+    "Wavytext Animation"
   ];
 
   @override
@@ -92,7 +93,8 @@ class _first_pageState extends State<first_page> {
                  index == 16 ?Navigator.push(context,MaterialPageRoute(builder: (context) {return drawer_animation();},)):
                  index == 17 ?Navigator.push(context,MaterialPageRoute(builder: (context) {return bouncing_animation();},)):
                  index == 18?Navigator.push(context,MaterialPageRoute(builder: (context) {return loading_animation();},)):
-                 Navigator.push(context,MaterialPageRoute(builder: (context) {return physics_animation();},));
+                index == 19 ? Navigator.push(context,MaterialPageRoute(builder: (context) {return physics_animation();},)):
+                Navigator.push(context,MaterialPageRoute(builder: (context) {return wavytext_animation();},));
                 },
             title: Text("${animation_name[index]}",style: TextStyle(color: Colors.white)),
                 trailing: Icon(Icons.arrow_forward_ios,color: Colors.white,),

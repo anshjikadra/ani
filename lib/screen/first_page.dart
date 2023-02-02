@@ -3,6 +3,7 @@ import 'package:ani/screen/animeted_switch.dart';
 import 'package:ani/screen/background_animation.dart';
 import 'package:ani/screen/bottom_navigationbar_animation.dart';
 import 'package:ani/screen/bouncing_animation.dart';
+import 'package:ani/screen/boxtransition_animation.dart';
 import 'package:ani/screen/button_animation.dart';
 import 'package:ani/screen/card_animation.dart';
 import 'package:ani/screen/drawer_animation.dart';
@@ -55,7 +56,8 @@ class _first_pageState extends State<first_page> {
     "Loading Animation",
     "Physics Animation",
     "Wavytext Animation",
-    "While Animation"
+    "While Animation",
+    "Boxtransition Animation"
   ];
 
   @override
@@ -97,7 +99,8 @@ class _first_pageState extends State<first_page> {
                   index == 18?  Navigator.push(context,MaterialPageRoute(builder: (context) {return loading_animation();},)):
                  index == 19 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return physics_animation();},)):
                  index == 20 ? Navigator.push(context,MaterialPageRoute(builder: (context) {return wavytext_animation();},)):
-                Navigator.push(context,MaterialPageRoute(builder: (context) {return while_animation();},));
+                index == 21 ?Navigator.push(context,MaterialPageRoute(builder: (context) {return while_animation();},)):
+                Navigator.push(context,MaterialPageRoute(builder: (context) {return boxtransition_animation();},));
                 },
             title: Text("${animation_name[index]}",style: TextStyle(color: Colors.white)),
                 trailing: Icon(Icons.arrow_forward_ios,color: Colors.white,),

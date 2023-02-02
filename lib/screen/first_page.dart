@@ -75,7 +75,7 @@ class _first_pageState extends State<first_page> {
     "Counter Animation",
     "carousel indicator Animation",
     "Imageslider Animation",
-    "Swiper Animation"
+    "Swiper Animation",
 
   ];
 
@@ -105,7 +105,7 @@ class _first_pageState extends State<first_page> {
                  index == 5 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return background_animation();},)):
                  index == 6 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return icon_animation();},)):
                  index == 7 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return bottom_navigationbar_animation();},)):
-                 index == 8 ?  Navigator.push(context, MaterialPageRoute(builder: (context) {return  splashscreen_animation();},)):
+                 index == 8 ?  Navigator.push(context, MaterialPageRoute(builder: (context) {return splashscreen_animation();},)):
                  index == 9 ?  Navigator.push(context, MaterialPageRoute(builder: (context) {return waterflow_animation();},)):
                  index == 10 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return animeted_switch();},)):
                  index == 11 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return zoomtap_animation();},)):

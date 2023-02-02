@@ -61,7 +61,10 @@ dependencies:
   animated_flip_counter:
   flutter_flip_card:
   carousel_indicator:
+    #slider mate.......
   mj_image_slider:
+  appinio_swiper:
+
 
 
 

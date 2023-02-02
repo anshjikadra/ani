@@ -24,6 +24,7 @@ import 'package:ani/screen/searchbar_animation.dart';
 import 'package:ani/screen/shimmer_animation.dart';
 import 'package:ani/screen/showup_animation.dart';
 import 'package:ani/screen/splashscreen_animation.dart';
+import 'package:ani/screen/swiper_animation.dart';
 import 'package:ani/screen/text_animation.dart';
 import 'package:ani/screen/waterflow_animation.dart';
 import 'package:ani/screen/while_animation.dart';
@@ -73,7 +74,9 @@ class _first_pageState extends State<first_page> {
     "Like Animation",
     "Counter Animation",
     "carousel indicator Animation",
-    "Imageslider Animation"
+    "Imageslider Animation",
+    "Swiper Animation"
+
   ];
 
   @override
@@ -124,7 +127,8 @@ class _first_pageState extends State<first_page> {
                index == 27?  Navigator.push(context,MaterialPageRoute(builder: (context) {return like_animation();},)):
                index == 28?  Navigator.push(context,MaterialPageRoute(builder: (context) {return conter_animation();},)):
                index == 29 ?Navigator.push(context,MaterialPageRoute(builder: (context) {return corouselindicator_animation();},)):
-                Navigator.push(context,MaterialPageRoute(builder: (context) {return imgslider_animation();},));
+                index == 30 ?Navigator.push(context,MaterialPageRoute(builder: (context) {return imgslider_animation();},)):
+              Navigator.push(context,MaterialPageRoute(builder: (context) {return swiper_animation();},));
                 },
             title: Text("${animation_name[index]}",style: TextStyle(color: Colors.white)),
                 trailing: Icon(Icons.arrow_forward_ios,color: Colors.white,),

@@ -20,11 +20,11 @@ class _shimmer_animationState extends State<shimmer_animation> {
           duration: Duration(seconds: 1), //Default value
           interval: Duration(seconds: 1), //Default value: Duration(seconds: 0)
           color: Colors.white, //Default value
-          colorOpacity: 0, //Default value
+          colorOpacity:0, //Default value
           enabled: true, //Default value
-          direction: ShimmerDirection.fromLTRB(),  //Default Value
+          direction: ShimmerDirection.fromRTLB(),  //Default Value
           child: Container(
-            color: Colors.deepPurple,
+            color: Colors.indigo,
           ),
         ),
       ),

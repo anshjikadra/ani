@@ -78,6 +78,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+  carousel_indicator:
+    dependency: "direct main"
+    description:
+      name: carousel_indicator
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.6"
   characters:
     dependency: transitive
     description:
@@ -242,6 +249,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.0"
+  mj_image_slider:
+    dependency: "direct main"
+    description:
+      name: mj_image_slider
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.7"
   number_slide_animation:
     dependency: "direct main"
     description:

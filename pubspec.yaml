@@ -60,6 +60,9 @@ dependencies:
   like_button:
   animated_flip_counter:
   flutter_flip_card:
+  carousel_indicator:
+  mj_image_slider:
+
 
 
 

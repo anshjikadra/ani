@@ -6,12 +6,13 @@ import 'package:ani/screen/bouncing_animation.dart';
 import 'package:ani/screen/boxtransition_animation.dart';
 import 'package:ani/screen/button_animation.dart';
 import 'package:ani/screen/card_animation.dart';
+import 'package:ani/screen/carousel_indicator.dart';
 import 'package:ani/screen/counter_animation.dart';
 import 'package:ani/screen/drawer_animation.dart';
-import 'package:ani/screen/drawing_animation.dart';
 import 'package:ani/screen/gravity_animation.dart';
 import 'package:ani/screen/gridview_animation.dart';
 import 'package:ani/screen/icon_animation.dart';
+import 'package:ani/screen/imgslider_animation.dart';
 import 'package:ani/screen/like_animation.dart';
 import 'package:ani/screen/listview_animation.dart';
 import 'package:ani/screen/loading_animation.dart';
@@ -68,11 +69,11 @@ class _first_pageState extends State<first_page> {
     "Shimmer Animation",
     "Searchbar Animation",
     "Showup Animation",
-    "Drawing Animation",
     "Numberslide Animation",
     "Like Animation",
-    "Conter Animation",
-    "Flipcard Animation"
+    "Counter Animation",
+    "carousel indicator Animation",
+    "Imageslider Animation"
   ];
 
   @override
@@ -119,11 +120,11 @@ class _first_pageState extends State<first_page> {
                index == 23?  Navigator.push(context,MaterialPageRoute(builder: (context) {return shimmer_animation();},)):
                index == 24?  Navigator.push(context,MaterialPageRoute(builder: (context) {return searchbar_animation();},)):
                index == 25?  Navigator.push(context,MaterialPageRoute(builder: (context) {return showup_animation();},)):
-               index == 26?  Navigator.push(context,MaterialPageRoute(builder: (context) {return drawing_animation();},)):
-               index == 27?  Navigator.push(context,MaterialPageRoute(builder: (context) {return numberslide_animation();},)):
-               index == 28?  Navigator.push(context,MaterialPageRoute(builder: (context) {return like_animation();},)):
-               index == 29?  Navigator.push(context,MaterialPageRoute(builder: (context) {return conter_animation();},)):
-               Navigator.push(context,MaterialPageRoute(builder: (context) {return conter_animation();},));
+               index == 26?  Navigator.push(context,MaterialPageRoute(builder: (context) {return numberslide_animation();},)):
+               index == 27?  Navigator.push(context,MaterialPageRoute(builder: (context) {return like_animation();},)):
+               index == 28?  Navigator.push(context,MaterialPageRoute(builder: (context) {return conter_animation();},)):
+               index == 29 ?Navigator.push(context,MaterialPageRoute(builder: (context) {return corouselindicator_animation();},)):
+                Navigator.push(context,MaterialPageRoute(builder: (context) {return imgslider_animation();},));
                 },
             title: Text("${animation_name[index]}",style: TextStyle(color: Colors.white)),
                 trailing: Icon(Icons.arrow_forward_ios,color: Colors.white,),

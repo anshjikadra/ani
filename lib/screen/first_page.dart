@@ -6,23 +6,30 @@ import 'package:ani/screen/bouncing_animation.dart';
 import 'package:ani/screen/boxtransition_animation.dart';
 import 'package:ani/screen/button_animation.dart';
 import 'package:ani/screen/card_animation.dart';
+import 'package:ani/screen/counter_animation.dart';
 import 'package:ani/screen/drawer_animation.dart';
+import 'package:ani/screen/drawing_animation.dart';
 import 'package:ani/screen/gravity_animation.dart';
 import 'package:ani/screen/gridview_animation.dart';
 import 'package:ani/screen/icon_animation.dart';
+import 'package:ani/screen/like_animation.dart';
 import 'package:ani/screen/listview_animation.dart';
 import 'package:ani/screen/loading_animation.dart';
 import 'package:ani/screen/loop_animation.dart';
 import 'package:ani/screen/moon_animation.dart';
 import 'package:ani/screen/pagetransition_animation.dart';
 import 'package:ani/screen/physics_animation.dart';
-import 'package:ani/screen/positioned_animation.dart';
+import 'package:ani/screen/searchbar_animation.dart';
+import 'package:ani/screen/shimmer_animation.dart';
+import 'package:ani/screen/showup_animation.dart';
 import 'package:ani/screen/splashscreen_animation.dart';
 import 'package:ani/screen/text_animation.dart';
 import 'package:ani/screen/waterflow_animation.dart';
 import 'package:ani/screen/while_animation.dart';
 import 'package:ani/screen/zoomtap_animation.dart';
 import 'package:flutter/material.dart';
+
+import 'numberslide_animation.dart';
 
 
 class first_page extends StatefulWidget {
@@ -57,7 +64,15 @@ class _first_pageState extends State<first_page> {
     "Physics Animation",
     "Wavytext Animation",
     "While Animation",
-    "Boxtransition Animation"
+    "Boxtransition Animation",
+    "Shimmer Animation",
+    "Searchbar Animation",
+    "Showup Animation",
+    "Drawing Animation",
+    "Numberslide Animation",
+    "Like Animation",
+    "Conter Animation",
+    "Flipcard Animation"
   ];
 
   @override
@@ -99,8 +114,16 @@ class _first_pageState extends State<first_page> {
                   index == 18?  Navigator.push(context,MaterialPageRoute(builder: (context) {return loading_animation();},)):
                  index == 19 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return physics_animation();},)):
                  index == 20 ? Navigator.push(context,MaterialPageRoute(builder: (context) {return wavytext_animation();},)):
-                index == 21 ?Navigator.push(context,MaterialPageRoute(builder: (context) {return while_animation();},)):
-                Navigator.push(context,MaterialPageRoute(builder: (context) {return boxtransition_animation();},));
+                index == 21? Navigator.push(context,MaterialPageRoute(builder: (context) {return while_animation();},)):
+                index == 22? Navigator.push(context,MaterialPageRoute(builder: (context) {return boxtransition_animation();},)):
+               index == 23?  Navigator.push(context,MaterialPageRoute(builder: (context) {return shimmer_animation();},)):
+               index == 24?  Navigator.push(context,MaterialPageRoute(builder: (context) {return searchbar_animation();},)):
+               index == 25?  Navigator.push(context,MaterialPageRoute(builder: (context) {return showup_animation();},)):
+               index == 26?  Navigator.push(context,MaterialPageRoute(builder: (context) {return drawing_animation();},)):
+               index == 27?  Navigator.push(context,MaterialPageRoute(builder: (context) {return numberslide_animation();},)):
+               index == 28?  Navigator.push(context,MaterialPageRoute(builder: (context) {return like_animation();},)):
+               index == 29?  Navigator.push(context,MaterialPageRoute(builder: (context) {return conter_animation();},)):
+               Navigator.push(context,MaterialPageRoute(builder: (context) {return conter_animation();},));
                 },
             title: Text("${animation_name[index]}",style: TextStyle(color: Colors.white)),
                 trailing: Icon(Icons.arrow_forward_ios,color: Colors.white,),

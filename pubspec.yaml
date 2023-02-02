@@ -52,6 +52,15 @@ dependencies:
   animations:
   ripple_animation:
   flip_card:
+  shimmer_animation:
+  searchbar_animation:
+  show_up_animation:
+  drawing_animation:
+  number_slide_animation:
+  like_button:
+  animated_flip_counter:
+  flutter_flip_card:
+
 
 
 dev_dependencies:

@@ -19,6 +19,7 @@ import 'package:ani/screen/positioned_animation.dart';
 import 'package:ani/screen/splashscreen_animation.dart';
 import 'package:ani/screen/text_animation.dart';
 import 'package:ani/screen/waterflow_animation.dart';
+import 'package:ani/screen/while_animation.dart';
 import 'package:ani/screen/zoomtap_animation.dart';
 import 'package:flutter/material.dart';
 
@@ -53,7 +54,8 @@ class _first_pageState extends State<first_page> {
     "Bouncing Animation",
     "Loading Animation",
     "Physics Animation",
-    "Wavytext Animation"
+    "Wavytext Animation",
+    "While Animation"
   ];
 
   @override
@@ -88,13 +90,14 @@ class _first_pageState extends State<first_page> {
                  index == 11 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return zoomtap_animation();},)):
                  index == 12 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return MyCustomWidget();},)):
                   index == 13 ? Navigator.push(context,MaterialPageRoute(builder: (context) {return gravity_animation();},)):
-                  index == 14 ?Navigator.push(context,MaterialPageRoute(builder: (context) {return cardanimation();},)):
-                  index == 15? Navigator.push(context,MaterialPageRoute(builder: (context) {return moon_animation();},)):
-                 index == 16 ?Navigator.push(context,MaterialPageRoute(builder: (context) {return drawer_animation();},)):
-                 index == 17 ?Navigator.push(context,MaterialPageRoute(builder: (context) {return bouncing_animation();},)):
-                 index == 18?Navigator.push(context,MaterialPageRoute(builder: (context) {return loading_animation();},)):
-                index == 19 ? Navigator.push(context,MaterialPageRoute(builder: (context) {return physics_animation();},)):
-                Navigator.push(context,MaterialPageRoute(builder: (context) {return wavytext_animation();},));
+                  index == 14 ? Navigator.push(context,MaterialPageRoute(builder: (context) {return cardanimation();},)):
+                  index == 15?  Navigator.push(context,MaterialPageRoute(builder: (context) {return moon_animation();},)):
+                  index == 16 ? Navigator.push(context,MaterialPageRoute(builder: (context) {return drawer_animation();},)):
+                  index == 17 ? Navigator.push(context,MaterialPageRoute(builder: (context) {return bouncing_animation();},)):
+                  index == 18?  Navigator.push(context,MaterialPageRoute(builder: (context) {return loading_animation();},)):
+                 index == 19 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return physics_animation();},)):
+                 index == 20 ? Navigator.push(context,MaterialPageRoute(builder: (context) {return wavytext_animation();},)):
+                Navigator.push(context,MaterialPageRoute(builder: (context) {return while_animation();},));
                 },
             title: Text("${animation_name[index]}",style: TextStyle(color: Colors.white)),
                 trailing: Icon(Icons.arrow_forward_ios,color: Colors.white,),

@@ -97,16 +97,16 @@ class _first_pageState extends State<first_page> {
            borderOnForeground: true,
               child: ListTile(
                 onTap: () {
-                 index == 0 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return text_animation();},)):
-                 index == 1 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return loop_animation();},)):
-                 index == 2 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return button_animation();},)):
-                 index == 3 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return listview_animation();},)):
-                 index == 4 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return gridview_animation();},)):
-                 index == 5 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return background_animation();},)):
-                 index == 6 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return icon_animation();},)):
-                 index == 7 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return bottom_navigationbar_animation();},)):
-                 index == 8 ?  Navigator.push(context, MaterialPageRoute(builder: (context) {return splashscreen_animation();},)):
-                 index == 9 ?  Navigator.push(context, MaterialPageRoute(builder: (context) {return waterflow_animation();},)):
+                 index == 0 ?  Navigator. push(context,MaterialPageRoute(builder: (context) {return text_animation();},)):
+                 index == 1 ?  Navigator. push(context,MaterialPageRoute(builder: (context) {return loop_animation();},)):
+                 index == 2 ?  Navigator. push(context,MaterialPageRoute(builder: (context) {return button_animation();},)):
+                 index == 3 ?  Navigator. push(context,MaterialPageRoute(builder: (context) {return listview_animation();},)):
+                 index == 4 ?  Navigator. push(context,MaterialPageRoute(builder: (context) {return gridview_animation();},)):
+                 index == 5 ?  Navigator. push(context,MaterialPageRoute(builder: (context) {return background_animation();},)):
+                 index == 6 ?  Navigator. push(context,MaterialPageRoute(builder: (context) {return icon_animation();},)):
+                 index == 7 ?  Navigator. push(context,MaterialPageRoute(builder: (context) {return bottom_navigationbar_animation();},)):
+                 index == 8 ?  Navigator. push(context, MaterialPageRoute(builder: (context) {return splashscreen_animation();},)):
+                 index == 9 ?  Navigator. push(context, MaterialPageRoute(builder: (context) {return waterflow_animation();},)):
                  index == 10 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return animeted_switch();},)):
                  index == 11 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return zoomtap_animation();},)):
                  index == 12 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return MyCustomWidget();},)):
@@ -117,7 +117,7 @@ class _first_pageState extends State<first_page> {
                   index == 17 ? Navigator.push(context,MaterialPageRoute(builder: (context) {return bouncing_animation();},)):
                   index == 18?  Navigator.push(context,MaterialPageRoute(builder: (context) {return loading_animation();},)):
                  index == 19 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return physics_animation();},)):
-                 index == 20 ? Navigator.push(context,MaterialPageRoute(builder: (context) {return wavytext_animation();},)):
+                 index == 20 ? Navigator. push(context,MaterialPageRoute(builder: (context) {return wavytext_animation();},)):
                 index == 21? Navigator.push(context,MaterialPageRoute(builder: (context) {return while_animation();},)):
                 index == 22? Navigator.push(context,MaterialPageRoute(builder: (context) {return boxtransition_animation();},)):
                index == 23?  Navigator.push(context,MaterialPageRoute(builder: (context) {return shimmer_animation();},)):
@@ -126,9 +126,9 @@ class _first_pageState extends State<first_page> {
                index == 26?  Navigator.push(context,MaterialPageRoute(builder: (context) {return numberslide_animation();},)):
                index == 27?  Navigator.push(context,MaterialPageRoute(builder: (context) {return like_animation();},)):
                index == 28?  Navigator.push(context,MaterialPageRoute(builder: (context) {return conter_animation();},)):
-               index == 29 ?Navigator.push(context,MaterialPageRoute(builder: (context) {return corouselindicator_animation();},)):
-                index == 30 ?Navigator.push(context,MaterialPageRoute(builder: (context) {return imgslider_animation();},)):
-              Navigator.push(context,MaterialPageRoute(builder: (context) {return swiper_animation();},));
+               index == 29 ? Navigator. push(context,MaterialPageRoute(builder: (context) {return corouselindicator_animation();},)):
+                index == 30 ? Navigator.push(context,MaterialPageRoute(builder: (context) {return imgslider_animation();},)):
+                             Navigator.push(context,MaterialPageRoute(builder: (context) {return swiper_animation();},));
                 },
             title: Text("${animation_name[index]}",style: TextStyle(color: Colors.white)),
                 trailing: Icon(Icons.arrow_forward_ios,color: Colors.white,),

@@ -9,6 +9,8 @@ import 'package:ani/screen/card_animation.dart';
 import 'package:ani/screen/carousel_indicator.dart';
 import 'package:ani/screen/counter_animation.dart';
 import 'package:ani/screen/drawer_animation.dart';
+import 'package:ani/screen/floation_animation.dart';
+import 'package:ani/screen/funvas_animation.dart';
 import 'package:ani/screen/gravity_animation.dart';
 import 'package:ani/screen/gridview_animation.dart';
 import 'package:ani/screen/icon_animation.dart';
@@ -18,14 +20,18 @@ import 'package:ani/screen/listview_animation.dart';
 import 'package:ani/screen/loading_animation.dart';
 import 'package:ani/screen/loop_animation.dart';
 import 'package:ani/screen/moon_animation.dart';
+import 'package:ani/screen/mouseparallex_animation.dart';
 import 'package:ani/screen/pagetransition_animation.dart';
 import 'package:ani/screen/physics_animation.dart';
+import 'package:ani/screen/quickalert_animation.dart';
 import 'package:ani/screen/searchbar_animation.dart';
 import 'package:ani/screen/shimmer_animation.dart';
 import 'package:ani/screen/showup_animation.dart';
+import 'package:ani/screen/slider_animation.dart';
 import 'package:ani/screen/splashscreen_animation.dart';
 import 'package:ani/screen/swiper_animation.dart';
 import 'package:ani/screen/text_animation.dart';
+import 'package:ani/screen/varticalcard_animation.dart';
 import 'package:ani/screen/waterflow_animation.dart';
 import 'package:ani/screen/while_animation.dart';
 import 'package:ani/screen/zoomtap_animation.dart';
@@ -76,6 +82,12 @@ class _first_pageState extends State<first_page> {
     "carousel indicator Animation",
     "Imageslider Animation",
     "Swiper Animation",
+    "Floating Animation",
+    "Slider Animation",
+    "Quickalert Animation",
+    "Funvas Animation",
+    "Mouseparallex Animation",
+    "Vartical Card Animation"
 
   ];
 
@@ -128,7 +140,13 @@ class _first_pageState extends State<first_page> {
                index == 28?  Navigator.push(context,MaterialPageRoute(builder: (context) {return conter_animation();},)):
                index == 29 ? Navigator. push(context,MaterialPageRoute(builder: (context) {return corouselindicator_animation();},)):
                 index == 30 ? Navigator.push(context,MaterialPageRoute(builder: (context) {return imgslider_animation();},)):
-                             Navigator.push(context,MaterialPageRoute(builder: (context) {return swiper_animation();},));
+                 index == 31? Navigator.push(context,MaterialPageRoute(builder: (context) {return swiper_animation();},)):
+                 index == 32?Navigator.push(context,MaterialPageRoute(builder: (context) {return floation_animation();},)):
+                  index == 33 ? Navigator.push(context,MaterialPageRoute(builder: (context) {return slider_animation();},)):
+                 index==34 ?Navigator.push(context,MaterialPageRoute(builder: (context) {return quickalert_animation();},)):
+                 index == 35 ?Navigator.push(context,MaterialPageRoute(builder: (context) {return funvas_animation();},)):
+                 index == 36 ?Navigator.push(context,MaterialPageRoute(builder: (context) {return mouseparallex_animation();},)):
+                   Navigator.push(context,MaterialPageRoute(builder: (context) {return vartical_card_animation();},));
                 },
             title: Text("${animation_name[index]}",style: TextStyle(color: Colors.white)),
                 trailing: Icon(Icons.arrow_forward_ios,color: Colors.white,),

@@ -1,5 +1,6 @@
 import 'package:ani/screen/Wavytext_animation.dart';
 import 'package:ani/screen/animeted_switch.dart';
+import 'package:ani/screen/appbar_animation.dart';
 import 'package:ani/screen/background_animation.dart';
 import 'package:ani/screen/bottom_navigationbar_animation.dart';
 import 'package:ani/screen/bouncing_animation.dart';
@@ -38,7 +39,6 @@ import 'package:ani/screen/waterflow_animation.dart';
 import 'package:ani/screen/while_animation.dart';
 import 'package:ani/screen/zoomtap_animation.dart';
 import 'package:flutter/material.dart';
-
 import 'clockloader_animation.dart';
 import 'numberslide_animation.dart';
 
@@ -94,6 +94,7 @@ class _first_pageState extends State<first_page> {
     "Credits Animation",
     "Clockloader Animation",
     "Supercircle Animation",
+    "Appbar Animation"
   ];
 
   @override
@@ -122,8 +123,8 @@ class _first_pageState extends State<first_page> {
                  index == 5 ?  Navigator. push(context,MaterialPageRoute(builder: (context) {return background_animation();},)):
                  index == 6 ?  Navigator. push(context,MaterialPageRoute(builder: (context) {return icon_animation();},)):
                  index == 7 ?  Navigator. push(context,MaterialPageRoute(builder: (context) {return bottom_navigationbar_animation();},)):
-                 index == 8 ?  Navigator. push(context, MaterialPageRoute(builder: (context) {return splashscreen_animation();},)):
-                 index == 9 ?  Navigator. push(context, MaterialPageRoute(builder: (context) {return waterflow_animation();},)):
+                 index == 8 ?  Navigator. push(context,MaterialPageRoute(builder: (context) {return splashscreen_animation();},)):
+                 index == 9 ?  Navigator. push(context,MaterialPageRoute(builder: (context) {return waterflow_animation();},)):
                  index == 10 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return animeted_switch();},)):
                  index == 11 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return zoomtap_animation();},)):
                  index == 12 ?  Navigator.push(context,MaterialPageRoute(builder: (context) {return MyCustomWidget();},)):
@@ -154,7 +155,8 @@ class _first_pageState extends State<first_page> {
                   index == 37? Navigator.push(context,MaterialPageRoute(builder: (context) {return vartical_card_animation();},)):
                  index==38? Navigator.push(context,MaterialPageRoute(builder: (context) {return credits_animation();},)):
                   index==39 ?Navigator.push(context,MaterialPageRoute(builder: (context) {return clockloader_animation();},)):
-                  Navigator.push(context,MaterialPageRoute(builder: (context) {return supercircule_animation();},));
+                  index==40?Navigator.push(context,MaterialPageRoute(builder: (context) {return supercircule_animation();},)):
+                  Navigator.push(context,MaterialPageRoute(builder: (context) {return appbar_animation();},));
                 },
             title: Text("${animation_name[index]}",style: TextStyle(color: Colors.white)),
                 trailing: Icon(Icons.arrow_forward_ios,color: Colors.white,),

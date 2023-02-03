@@ -113,6 +113,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.1"
+  clock_loader:
+    dependency: "direct main"
+    description:
+      name: clock_loader
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.3"
   collection:
     dependency: transitive
     description:
@@ -120,6 +127,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.16.0"
+  credits:
+    dependency: "direct main"
+    description:
+      name: credits
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   crypto:
     dependency: transitive
     description:
@@ -457,6 +471,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.1"
+  super_circle:
+    dependency: "direct main"
+    description:
+      name: super_circle
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   term_glyph:
     dependency: transitive
     description:
@@ -492,6 +513,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.5.0"
+  widget_mask:
+    dependency: transitive
+    description:
+      name: widget_mask
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.1"
   win32:
     dependency: transitive
     description:

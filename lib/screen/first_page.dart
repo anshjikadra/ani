@@ -8,6 +8,7 @@ import 'package:ani/screen/button_animation.dart';
 import 'package:ani/screen/card_animation.dart';
 import 'package:ani/screen/carousel_indicator.dart';
 import 'package:ani/screen/counter_animation.dart';
+import 'package:ani/screen/credits_animation.dart';
 import 'package:ani/screen/drawer_animation.dart';
 import 'package:ani/screen/floation_animation.dart';
 import 'package:ani/screen/funvas_animation.dart';
@@ -29,6 +30,7 @@ import 'package:ani/screen/shimmer_animation.dart';
 import 'package:ani/screen/showup_animation.dart';
 import 'package:ani/screen/slider_animation.dart';
 import 'package:ani/screen/splashscreen_animation.dart';
+import 'package:ani/screen/supercircule_animation.dart';
 import 'package:ani/screen/swiper_animation.dart';
 import 'package:ani/screen/text_animation.dart';
 import 'package:ani/screen/varticalcard_animation.dart';
@@ -37,6 +39,7 @@ import 'package:ani/screen/while_animation.dart';
 import 'package:ani/screen/zoomtap_animation.dart';
 import 'package:flutter/material.dart';
 
+import 'clockloader_animation.dart';
 import 'numberslide_animation.dart';
 
 
@@ -87,8 +90,10 @@ class _first_pageState extends State<first_page> {
     "Quickalert Animation",
     "Funvas Animation",
     "Mouseparallex Animation",
-    "Vartical Card Animation"
-
+    "Vartical Card Animation",
+    "Credits Animation",
+    "Clockloader Animation",
+    "Supercircle Animation",
   ];
 
   @override
@@ -146,7 +151,10 @@ class _first_pageState extends State<first_page> {
                  index==34 ?Navigator.push(context,MaterialPageRoute(builder: (context) {return quickalert_animation();},)):
                  index == 35 ?Navigator.push(context,MaterialPageRoute(builder: (context) {return funvas_animation();},)):
                  index == 36 ?Navigator.push(context,MaterialPageRoute(builder: (context) {return mouseparallex_animation();},)):
-                   Navigator.push(context,MaterialPageRoute(builder: (context) {return vartical_card_animation();},));
+                  index == 37? Navigator.push(context,MaterialPageRoute(builder: (context) {return vartical_card_animation();},)):
+                 index==38? Navigator.push(context,MaterialPageRoute(builder: (context) {return credits_animation();},)):
+                  index==39 ?Navigator.push(context,MaterialPageRoute(builder: (context) {return clockloader_animation();},)):
+                  Navigator.push(context,MaterialPageRoute(builder: (context) {return supercircule_animation();},));
                 },
             title: Text("${animation_name[index]}",style: TextStyle(color: Colors.white)),
                 trailing: Icon(Icons.arrow_forward_ios,color: Colors.white,),
